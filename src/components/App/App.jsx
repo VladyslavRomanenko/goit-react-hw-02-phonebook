@@ -71,7 +71,7 @@ export class App extends Component {
   getContacts = () => {
     const { contacts, filter } = this.state;
     return contacts.filter(contact =>
-      contact.name.toLocaleLowerCase().includes(filter.toLocaleLowerCase())
+      contact.name.toLowerCase().includes(filter.toLowerCase())
     );
   };
 
